@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CadastroAlunos from "../cadastros/CadastroAlunos";
+// import CadastroAlunos from "../cadastros/CadastroAlunos";
 import EditarAluno from "../aluno-funcoes/EditarAluno";
 import RemoverAluno from "../aluno-funcoes/RemoverAluno";
 
