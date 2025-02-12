@@ -1,5 +1,5 @@
 import './App.css'
-import EscolhaUsuario from './Routes/aluno-funcoes/EscolhaUsuario'
+import EscolhaUsuario from './Routes/EscolhaUsuario'
 
 
 function App() {

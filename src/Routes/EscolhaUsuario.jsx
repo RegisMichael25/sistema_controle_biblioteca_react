@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MenuLivro from "./menus/menu-livro";
-import MenuAluno from "./menus/menu-aluno";
+import MenuLivro from "./menus/MenuLivro";
+import MenuAluno from "./menus/MenuAluno";
 
 const EscolhaUsuario = () => 
 {
@@ -11,7 +11,7 @@ const EscolhaUsuario = () =>
         switch(escolha)
         {
             case "alunos":
-                return <MenuAluno/>
+                return <MenuAluno />
                 
             case "livros":
                 return <MenuLivro /> 
@@ -27,16 +27,16 @@ const EscolhaUsuario = () =>
             {escolha === null && (
                 <>
 
-                    <button className="font-semibold text-2xl" onClick={() => setEscolha('alunos')}> Menu Alunos <i className="bi bi-person-add"></i></button>
-                    <button className="font-semibold text-2xl" onClick={() => setEscolha('livros')}> Menu Livros <i className="bi bi-book"></i></button>
+                    <button className="font-semibold text-2xl" onClick={ () => setEscolha('alunos') }> Menu Alunos <i className="bi bi-person-add"></i></button>
+                    <button className="font-semibold text-2xl" onClick={ () => setEscolha('livros') }> Menu Livros <i className="bi bi-book"></i></button>
 
                 </>
             )}
             {escolha !== null && (
                 <>
 
-                    <button className="font-semibold text-2xl" onClick={() => setEscolha(null)}> Voltar </button>
-                    {renderizarEscolha()}
+                    <button className="font-semibold text-2xl" onClick={ () => setEscolha(null) }> Voltar </button>
+                    { renderizarEscolha() }
                     
                 </>
             )}

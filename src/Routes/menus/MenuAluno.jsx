@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import CadastroAlunos from "../cadastros/CadastroAlunos";
 import EditarAluno from "../aluno-funcoes/EditarAluno";
 import RemoverAluno from "../aluno-funcoes/RemoverAluno";
+import ButtonCadastroAlunos from "../botoes/ButtonCadastroAlunos";
 
 const MenuAluno = () => 
     {
@@ -13,7 +13,7 @@ const MenuAluno = () =>
             switch(escolhaMenuAluno)
             {
                 case "adicionarAlunos":
-                    return <CadastroAlunos />
+                    return <ButtonCadastroAlunos />
                 case "editarAlunos":
                     return <EditarAluno />
                 case "removerAlunos":
